@@ -1,6 +1,11 @@
+@import "null.scss";
 
-.html {
+html {
     font-size: 10px;
+}
+
+body {
+    background-color: #ffffff;
 }
 
 .wrapper {
@@ -8,5 +13,17 @@
 }
 
 .container {
-    max-width: 120rem;
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.4rem solid #003459;
+    border-radius: 0.8rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
 }
