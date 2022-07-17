@@ -1,14 +1,24 @@
-
+import { onlyNumbers as inputOnlyNumbers } from "../modules/commonModule";
 
 const Field = ({ 
     name = "", 
     change = () => {}, 
-    value = "",   
+    value = "",  
+    readOnly = false,
+    textEnd = "",
+    placeholder = "",
+    onlyNumbers = false
 }) => {
 
     const styles = {
         maxWidth: '1000px',
     }
+
+    let onlyNumbersInput = () => {};
+    if (onlyNumbers) {
+        onlyNumbersInput = inputOnlyNumbers;   
+    }
+
     return (
         <div className="field" style={styles}>
             <label
@@ -20,7 +30,11 @@ const Field = ({
                     className="field__input"
                     onChange={change} 
                     value={value}
+                    readOnly={readOnly}
+                    placeholder={placeholder}
+                    onKeyPress={onlyNumbersInput}
                 />
+                <div className="field__text-end">{textEnd}</div>
             </div>
         </div>
     );

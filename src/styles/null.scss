@@ -83,3 +83,9 @@ input:focus {
     scroll-behavior: auto !important;
   }
 }
+
+button {
+  border: none;
+  outline: none;
+  user-select: none;
+}

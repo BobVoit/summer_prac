@@ -2,6 +2,7 @@
 
 @import "null.scss";
 @import "field.scss";
+@import "button.scss";
 
 html {
     font-size: 10px;
@@ -31,3 +32,11 @@ body {
     margin: 2rem 0;
     padding: 2rem 0;
 }
+
+.commands {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
