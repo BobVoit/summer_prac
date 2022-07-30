@@ -4,8 +4,8 @@ import Image from './components/Image';
 import Field from './components/Field';
 import Buttom from './components/Button';
 import { squareParallelogram } from "./modules/commonModule";
-import Text from './components/Text';
 import Title from './components/Title';
+import imageFormula from "./images/formula.png";
 
 function App() {
   const [a, aSetValue] = useState(0);
@@ -30,7 +30,10 @@ function App() {
           <Title 
             text={title}
           />
-          <Image />  
+          <Image 
+            image={imageFormula}
+            altText="formula"
+          />  
           <div className="fields">
             <Field 
               name="Сторона a" 
@@ -47,7 +50,7 @@ function App() {
               onlyNumbers={true}
             />
             <Field 
-              name="Угол alpha" 
+              name="Угол α" 
               value={alpha}
               change={e => alphaSetValue(e.target.value)}
               placeholder="Введите угол между сторонами"

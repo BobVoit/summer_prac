@@ -1,15 +1,14 @@
-import imageFormula from "../images/formula.png";
 
 
-const Image = ({  }) => {
+const Image = ({ image, altText }) => {
 
 
     return (
         <div className="image_wrapper">
             <img 
                 className="image_img"
-                src={imageFormula}
-                alt="formula"
+                src={image}
+                alt={altText}
             />
         </div>
     );
