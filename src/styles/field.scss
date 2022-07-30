@@ -1,15 +1,17 @@
 .field {
     display: flex;
     align-items: center;
+    max-width: 40rem;
+    width: 100%;
 }
 
 .field__label {
     font-size: 1.5rem;
     user-select: none;
+    white-space: nowrap;
 }
 
 .field__wrapper {
-    width: 30rem;
     border-radius: 1rem;
 
     outline: .3rem solid #3a506b;
